@@ -25,4 +25,4 @@
 1. **HTML**: A estrutura da página foi criada utilizando HTML, com a inclusão de elementos como imagens, formulários e links.
 2. **CSS**: O estilo visual foi implementado com CSS, aplicando regras para a formatação da página e seus elementos.
 3. **Responsividade**: Usando **media queries**, a página ajusta-se automaticamente para telas menores, mantendo uma boa experiência de navegação.<br>
-LINK:
+LINK:https://patrick2026.github.io/Projeto-Google/
