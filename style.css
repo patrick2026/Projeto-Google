@@ -64,51 +64,55 @@ body {
 }
 
 #input-box {
-  width: 48vw;
-  height: 3.75rem; /* 60px → 3.75rem */
+  width: 45rem; /* 449px */
+  height: 2.875rem; /* 50px */
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 #search-input {
-  height: 3rem; /* 48px → 3rem */
-  border-radius: 1.5rem; /* 24px → 1.5rem */
+  height: 100%;
   width: 100%;
+  border-radius: 1.5625rem; /* 25px */
   box-sizing: border-box;
-  font-size: 1rem; /* 16px → 1rem */
-  padding: 0 3.125rem; /* 50px → 3.125rem */
-  border: 0.0625rem solid #dfdfdf; /* 1px → 0.0625rem */
-  box-shadow: 0rem 0rem 0.3125rem #ddd; /* 0px 0px 5px → 0rem 0rem 0.3125rem */
+  font-size: 1rem; /* 16px */
+  padding: 0 3.5rem 0 2.5rem; /* Espaço para os ícones */
+  border: 1px solid #dfe1e5;
+  background-color: #fff;
+  box-shadow: 0px 1px 6px rgba(32, 33, 36, 0.28);
+  transition: box-shadow 0.2s ease-in-out;
 }
 
+#search-input:focus {
+  outline: none;
+  box-shadow: 0px 1px 8px rgba(32, 33, 36, 0.4);
+}
+
+/* Ícones dentro do input */
 #search-icon,
 #keyboard-icon,
 #mic-icon {
   position: absolute;
-  top: 0.9375rem; /* 15px → 0.9375rem */
-  font-size: 1.125rem; /* 18px → 1.125rem */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.125rem; /* 18px */
+  color: #9aa0a6;
 }
 
+/* Ícone da lupa (esquerda) */
 #search-icon {
-  left: 1.25rem; /* 20px → 1.25rem */
+  left: 1rem; /* 16px */
 }
 
+/* Ícone do teclado (direita) */
 #keyboard-icon {
-  right: 3.4375rem; /* 55px → 3.4375rem */
+  right: 3.25rem; /* 52px */
+  cursor: pointer;
 }
 
+/* Ícone do microfone (direita) */
 #mic-icon {
-  right: 1.25rem; /* 20px → 1.25rem */
-}
-
-#body input[type="submit"] {
-  background-color: #f2f2f2;
-  border: 0.0625rem solid #f2f2f2; /* 1px → 0.0625rem */
-  border-radius: 0.25rem; /* 4px → 0.25rem */
-  color: #5f6368;
-  height: 2.125rem; /* 34px → 2.125rem */
-  padding: 0 1rem; /* 16px → 1rem */
-  font-size: 0.875rem; /* 14px → 0.875rem */
-  margin: 0.9375rem 0.3125rem; /* 15px 5px → 0.9375rem 0.3125rem */
+  right: 1rem; /* 16px */
+  color: #1a73e8;
+  cursor: pointer;
 }
