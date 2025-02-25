@@ -65,7 +65,7 @@ body {
 
 #input-box {
   width: 45rem; /* 449px */
-  height: 2.875rem; /* 50px */
+  height: 3rem; /* 48px */
   position: relative;
   margin: 0 auto;
 }
@@ -95,8 +95,10 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 1.125rem; /* 18px */
+  font-size: 1.25rem; /* Ajuste o tamanho do ícone */
   color: #9aa0a6;
+  display: inline-block;
+  z-index: 1;
 }
 
 /* Ícone da lupa (esquerda) */
@@ -115,4 +117,13 @@ body {
   right: 1rem; /* 16px */
   color: #1a73e8;
   cursor: pointer;
+}
+
+/* Adicionando imagens dentro dos ícones */
+#search-icon img,
+#keyboard-icon img,
+#mic-icon img {
+  width: 18px; /* Ajuste o tamanho da imagem */
+  height: 18px;
+  object-fit: contain;
 }
